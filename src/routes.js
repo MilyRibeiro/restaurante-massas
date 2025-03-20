@@ -6,11 +6,11 @@ import Menu from 'componentes/Menu';
 import PaginaPadrao from 'componentes/PaginaPadrao';
 import Sobre from 'pages/Sobre';
 import Rodape from 'componentes/Rodape';
-// import styles from './Routes.module.scss';
+import NotFound from 'pages/NotFound';
 
 export default function AppRouter() {
 	return (
-		<main>
+		<main className='container'>
 			<BrowserRouter>
 				<Menu />
 				<Routes>
@@ -19,6 +19,7 @@ export default function AppRouter() {
 						<Route path='cardapio' element={<Cardapio />} />
 						<Route path='sobre' element={<Sobre />} />
 					</Route>
+          			<Route path='*' element={<NotFound />} />
 				</Routes>
 				<Rodape />
 			</BrowserRouter>

@@ -13,13 +13,16 @@
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
-    },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   },
   "plugins": [
-    "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "react"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
