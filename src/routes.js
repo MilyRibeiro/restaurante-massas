@@ -1,9 +1,10 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import React from "react";
-import Inicio from "pages/Inicio";
-import Cardapio from "pages/Cardapio";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import Inicio from 'pages/Inicio';
+import Cardapio from 'pages/Cardapio';
 import Menu from 'componentes/Menu';
-import PaginaPadrao from "componentes/PaginaPadrao";
+import PaginaPadrao from 'componentes/PaginaPadrao';
+import Sobre from 'pages/Sobre';
 // import styles from './Routes.module.scss';
 
 export default function AppRouter() {
@@ -15,6 +16,7 @@ export default function AppRouter() {
 						<Route path='/' element={<PaginaPadrao />}>
 							<Route index element={<Inicio />} />
 							<Route path='cardapio' element={<Cardapio />} />
+							<Route path='sobre' element={<Sobre />} />
 						</Route>
 					</Routes>
 			</BrowserRouter>
