@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import styles from './NotFound.module.scss';
 import { ReactComponent as NotFoundImage } from 'assets/not_found.svg';
 import classNames from 'classnames';

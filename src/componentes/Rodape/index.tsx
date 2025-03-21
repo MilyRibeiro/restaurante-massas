@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import styles from './Rodape.module.scss';
 import { ReactComponent as Logo } from 'assets/logo.svg';
 

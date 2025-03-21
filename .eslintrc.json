@@ -25,6 +25,7 @@
     "react"
   ],
   "rules": {
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^React$" }],
     "react/react-in-jsx-scope": "off",
     "indent": [
       "warn",

@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import React from 'react';
+// import React from 'react';
 import Inicio from 'pages/Inicio';
 import Cardapio from 'pages/Cardapio';
 import Menu from 'componentes/Menu';
@@ -19,7 +19,7 @@ export default function AppRouter() {
 						<Route path='cardapio' element={<Cardapio />} />
 						<Route path='sobre' element={<Sobre />} />
 					</Route>
-          			<Route path='*' element={<NotFound />} />
+								<Route path='*' element={<NotFound />} />
 				</Routes>
 				<Rodape />
 			</BrowserRouter>

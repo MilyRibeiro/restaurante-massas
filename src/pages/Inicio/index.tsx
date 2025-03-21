@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import cardapio from 'data/cardapio.json';
 import styles from './Inicio.module.scss';
 import stylesTema from 'styles/Tema.module.scss';

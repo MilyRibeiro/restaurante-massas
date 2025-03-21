@@ -1,5 +1,5 @@
 import styles from './Item.module.scss'; 
-import React from 'react';
+// import React from 'react';
 import cardapio from 'data/cardapio.json';
 import classNames from 'classnames';
 
