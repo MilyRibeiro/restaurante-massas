@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './Ordenador.module.scss';
 import opcoes from './opcoes.json';
 import { useState } from 'react';

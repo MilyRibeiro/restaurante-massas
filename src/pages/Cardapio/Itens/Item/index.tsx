@@ -3,7 +3,6 @@ import TagsPrato from 'componentes/TagsPrato';
 import { useNavigate } from 'react-router-dom';
 import { Prato } from 'types/Prato';
 
-
 export default function Item(props: Prato) {
   const { id, title, description, photo } = props;
   const navigate = useNavigate();

@@ -1,4 +1,3 @@
-// import React from 'react';
 import cardapio from 'data/cardapio.json';
 import styles from './Inicio.module.scss';
 import stylesTema from 'styles/Tema.module.scss';
@@ -11,7 +10,6 @@ export default function Inicio() {
   pratosRecomendados = pratosRecomendados.sort(() => 0.5 - Math.random()).splice(0, 3);
 
   const navigate = useNavigate();
-  // function redirecionarParaDetalhesDoPrato(prato: typeof cardapio[0]) {
   function redirecionarParaDetalhesDoPrato(prato: Prato) {
     navigate(`/prato/${prato.id}`, { state: { prato }, replace: true });
   }

@@ -1,4 +1,3 @@
-// import React from 'react';
 import styles from './Sobre.module.scss';
 import stylesTema from 'styles/Tema.module.scss';
 import casa from 'assets/sobre/casa.png';

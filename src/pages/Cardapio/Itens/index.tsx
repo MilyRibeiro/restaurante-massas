@@ -24,7 +24,6 @@ export default function Itens(props: Props) {
     return true;
   }
 
-  // function ordenar(novaLista: typeof cardapio) {
   function ordenar(novaLista: Cardapio) {
     switch(ordenador) {
     case 'porcao': 

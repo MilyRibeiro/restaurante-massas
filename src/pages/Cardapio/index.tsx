@@ -5,7 +5,6 @@ import Filtros from './Filtros';
 import Ordenador from './Ordenador';
 import Itens from './Itens';
 import stylesTema from 'styles/Tema.module.scss';
-// import Menu from 'componentes/Menu';
 
 export default function Cardapio() {
   const [busca, setBusca] = useState('');
