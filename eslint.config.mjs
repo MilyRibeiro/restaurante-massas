@@ -2,16 +2,23 @@ import js from "@eslint/js";
 import react from "eslint-plugin-react";
 import tseslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
+import globals from "globals"; // ✅ Importação corrigida
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
   {
-    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}", "!eslint.config.mjs"],
+    files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}", "!eslint.config.mjs", "!**/*.scss"], // ✅ Ignora SCSS
     languageOptions: { 
-      globals: globals.browser,
+      globals: { ...globals.browser }, // ✅ Corrigido
       parser: tsParser, 
       parserOptions: {
         project: "./tsconfig.json",
+        extraFileExtensions: [".scss"], // ✅ Evita erro ao ler SCSS
+      },
+    },
+    settings: {
+      react: {
+        version: "detect", // ✅ Define automaticamente a versão do React
       },
     },
     plugins: {
